@@ -1,0 +1,88 @@
+<!DOCTYPE html />
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../assets/img/ico-el-potrero.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>El Potrero</title> 
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__content max-width">
+                <a href="../index.html" class="content__logo">EL POTRERO</a>
+                <nav>
+                    <img class="menu" src="../assets/img/menu-icono.png" alt="menú" />
+                    <ul class="content__navbar">
+                        <li><a href="../index.html" class="navbar__item">Inicio<a></li>
+                        <li><a href="./productos.html" class="navbar__item">Productos</a></li>
+                        <li><a href="./nosotros.html" class="navbar__item">Nosotros</a></li>
+                        <li><a href="./contacto.html" class="navbar__item">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="mainContacto max-width">
+            <section class="mainContacto__section1">
+                <h1 class="section1__title destacados-title">¡Contactanos ahora mismo y sacate todas las dudas!</h1>
+                <p class="section1__description nosotros__description">Podes dejarnos tu consulta, llamarnos o simplemente escribirnos un mensaje a nuestro WhatsApp. ¡Con gusto vamos a contestarte!</p>
+            </section>
+            
+            <section class="mainContacto__section2">
+                <img class="section2__img nosotros__img" src="../assets/img/tabla-de-curupay.jpg" alt="Troncos de madera" />
+        
+                <form class="section2__form" action="" method="post" enctype="">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+
+                    <label for="numero">Número de telefono:</label>
+                    <input type="number" id="numero" name="numero" placeholder="Numero...">
+                    
+                    <label for="correo">E-mail:</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo...">
+                    
+                    <label for="consulta">Consulta:</label>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..."></textarea>
+
+                    <label for="donde">De que localidad sos:</label>
+                    <select name="donde" id="donde">
+                        <option value="Elegir">Elige una opción</option>
+                        <option value="Montevideo">Montevideo</option>
+                        <option value="Interior">Interior</option>
+                    </select>
+                    
+                    <label for="menor">Venta por menor</label>
+                    <input type="radio" name="venta" id="menor">
+                    <label for="mayor">Venta por mayor</label>
+                    <input type="radio" name="venta" id="mayor">
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </section>
+
+            <section class="wppbutton">
+                <a href="https://wa.me/+59899529506" target="_blank" rel="noopener noreferrer">
+                    <img class="wppbutton__wpp" src="../assets/img/wpp-logo.png" alt="Link WhatsApp" />
+                </a>
+                <p>¡Llamanos al 099529506!</p>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <h2  class="footer__title">Miranos en Redes sociales</h2>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/elpotrerouy/" target="_blank" rel="noopener noreferrer"><img src="../assets/img/instagram-logo.png" class="social__logo"  alt="Nuestro Instagram" /></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="../assets/img/facebook-logo.png" class="social__logo" alt="Nuestro Facebook" /></a>
+            </div>
+            <div class="footer__container">
+                <a href="./contacto.html" class="container__up">Volver arriba</a>
+                <p class="container__copy">© Copyright 2022 EL POTRERO - Todos los Derechos Reservados</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
