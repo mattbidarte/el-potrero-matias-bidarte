@@ -422,19 +422,69 @@ ul {
     font-size: 3em;
     font-weight: bold;
     padding: 20px;
-    background-color: #593622;
+    background-image: url(/assets/img/wood.png);
+    background-attachment: fixed;
+    background-size: 150%;
 }
 
-.sectionGrid h3 {
+.sectionGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px auto;
+
+}
+
+.contacto-button {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.sectionGrid__card img {
+    height: 110px;
+    border-radius: 8%;
+    align-self: center;
+}
+
+.sectionGrid__card-right h3 {
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-weight: bold;
 }
 
-.sectionGrid h4 {
-    color: #593622;
-    font-size: 1.1em;
+.sectionGrid__card-right p {
+    font-size: 1.2em;
 }
+
+.sectionGrid__card-right h4 {
+    color: #593622;
+    font-size: 1.7em;
+}
+
+.sectionGrid__card {
+    margin: 30px;
+    width: 360px;
+    height: 150px;
+    background-color: #e6e6e6;
+    border-radius: 3%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 100px 220px;
+    column-gap: 20px;
+    justify-content: center;
+    box-shadow: 0 15px 30px -12px rgba(0,0,0,0.5);
+}
+
+.sectionGrid__card:hover {
+    background-color: #593622;
+    color: #fff;
+}
+
+.sectionGrid__card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
 
 /* Fin Page Productos */
 
