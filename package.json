@@ -1,0 +1,22 @@
+{
+  "name": "el-potrero",
+  "version": "1.0.0",
+  "description": "Proyecto para el curso de Desarrollo Web de CoderHouse para El Potrero",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass sass/index.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbidarte/el-potrero-matias-bidarte.git"
+  },
+  "author": "Matias Bidarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattbidarte/el-potrero-matias-bidarte/issues"
+  },
+  "homepage": "https://github.com/mattbidarte/el-potrero-matias-bidarte#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
