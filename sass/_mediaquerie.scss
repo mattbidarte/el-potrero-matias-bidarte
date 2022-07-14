@@ -66,16 +66,39 @@
 @media screen and (max-width: 815px){
 
     /* Page index */
-    .header__content-navbar {
-        display: none;
-    }
-
-    .header__content-navbar li:last-child {
-        display: none;
-    }
-
-    .header__content-logo-menu {
+    .hamburger {
         display: block;
+        
+        &.active .hamburger__bar:nth-child(2) {
+            opacity: 0;
+        }
+        &.active .hamburger__bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        &.active .hamburger__bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg)
+        }
+    }
+
+    .header__content-navbar {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 20px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        background-color: #593622;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+        &-item {
+            font-size: 3em;
+        }
+
+        &.active {
+            left: 0;
+        }
     }
 
     .destacados {
