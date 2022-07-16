@@ -254,16 +254,13 @@ ul {
   .mainNosotros__nosotros {
     max-width: 60vw;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px; }
-  .nosotros__img {
-    height: 35vh;
-    margin-bottom: 50px; }
-  .nosotros__description {
-    text-align: center;
-    margin-left: 0; } }
+    flex-direction: column; }
+    .mainNosotros__nosotros img {
+      height: 25vh;
+      margin-bottom: 50px; }
+    .mainNosotros__nosotros p {
+      text-align: center;
+      margin-left: 0; } }
 
 @media screen and (max-width: 815px) {
   /* Page index */
@@ -340,6 +337,20 @@ ul {
   .mainNosotros_title {
     font-size: 3.5em; }
   .mainNosotros__nosotros {
-    max-width: 30vh; }
-  .nosotros__img {
-    height: 25vh; } }
+    max-width: 30vh; } }
+
+.mainNosotros_title {
+  margin-top: 100px; }
+
+.mainNosotros__nosotros {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; }
+  .mainNosotros__nosotros img {
+    height: 40vh;
+    border-radius: 15px;
+    border: #593622 10px solid; }
+  .mainNosotros__nosotros p {
+    margin-left: 50px;
+    font-size: 2em;
+    text-align: left; }

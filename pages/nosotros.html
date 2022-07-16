@@ -3,51 +3,74 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="../assets/img/ico-el-potrero.png" />
-        <link rel="stylesheet" href="../assets/css/style.css" />
-        <title>El Potrero - Nosotros</title> 
+        <meta name="descrption" content="Venta de madera al por mayor y menor de calidad para todo el territorio uruguayo" />
+        <link rel="shortcut icon" href="./assets/img/ico-el-potrero.png" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Iconos de Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="../css/style.css" />
+        
+        <title>El Potrero - Sobre nosotro</title>
     </head>
 
     <body>
+        <!-- Inicio del header con el nav bar -->
         <header class="header">
             <div class="header__content max-width">
-                <a href="../index.html" class="content__logo">EL POTRERO</a>
-                <nav>
-                    <img class="menu" src="../assets/img/menu-icono.png" alt="menú" />
-                    <ul class="content__navbar">
-                        <li><a href="../index.html" class="navbar__item">Inicio<a></li>
-                        <li><a href="./productos.html" class="navbar__item">Productos</a></li>
-                        <li><a href="./nosotros.html" class="navbar__item">Nosotros</a></li>
-                        <li><a href="./contacto.html" class="navbar__item">Contacto</a></li>
+                <a href="./index.html" class="header__content-logo">EL POTRERO</a>
+                <nav>          
+                    <ul class="header__content-navbar">
+                        <li><a href="./index.html" class="header__content-navbar-item">Inicio<a></li>
+                        <li><a href="./pages/productos.html" class="header__content-navbar-item">Productos</a></li>
+                        <li><a href="./pages/nosotros.html" class="header__content-navbar-item">Nosotros</a></li>
+                        <li><a href="./pages/contacto.html" class="header__content-navbar-item">Contacto</a></li>
                     </ul>
+                    
+                    <div class="hamburger">
+                        <!-- <img class="hamburger__logo" src="./assets/img/menu-icono.png" alt="menú" /> -->
+                        <span class="hamburger__bar"></span>
+                        <span class="hamburger__bar"></span>
+                        <span class="hamburger__bar"></span>
+                    </div>
                 </nav>
             </div>
         </header>
+        <!-- link script -->
+        <script src="../js/script.js"></script>
         
         <main class="mainNosotros max-width">
             <h1 class="mainNosotros_title destacados-title">¿Qué hacemos en EL POTRERO?</h1>
             <div class="mainNosotros__nosotros">
-                <img class="nosotros__img" src="../assets/img/poste-de-quebracho.jpg" alt="Poste de quebracho" />
-                <p class="nosotros__description">Somos EL POTRERO, importador y vendedor de postes de Quebrancho Colorado, así cómo Eucalipto Colorado. Además venta de insumos para alambrados y porteras de Eucalipto Colorado de hasta 3mt. Madera dura para el campo y construcción. Realizamos venta por menor y por mayor para todo el territorio Uruguayo. </p>
+                <img src="../assets/img/poste-de-quebracho.jpg" alt="Poste de quebracho" />
+                <p>Somos EL POTRERO, importador y vendedor de postes de Quebrancho Colorado, así cómo Eucalipto Colorado. Además venta de insumos para alambrados y porteras de Eucalipto Colorado de hasta 3mt. Madera dura para el campo y construcción. Realizamos venta por menor y por mayor para todo el territorio Uruguayo. </p>
             </div>
 
             <div class="main__button">
                 <a href="../pages/productos.html" class="button__main">Ver productos</a>
                 <a href="../pages/contacto.html" class="button__main">Contactar ahora</a>
             </div>
-            <!-- <a href="./productos.html" class="button__main">Ver productos</a>
-            <a href="./contacto.html" class="button__main">Contactar ahora</a> -->
         </main>
 
-        <footer class="footer">
+         <!-- Inicio del pie de pagina -->
+         <footer class="footer">
             <h2  class="footer__title">Miranos en Redes sociales</h2>
             <div class="footer__social">
-                <a href="https://www.instagram.com/elpotrerouy/" target="_blank" rel="noopener noreferrer"><img src="../assets/img/instagram-logo.png" class="social__logo"  alt="Nuestro Instagram" /></a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="../assets/img/facebook-logo.png" class="social__logo" alt="Nuestro Facebook" /></a>
+                <a href="https://www.instagram.com/elpotrerouy/" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/instagram-logo.png" class="footer__social-logo"  alt="Nuestro Instagram" />
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/facebook-logo.png" class="footer__social-logo" alt="Nuestro Facebook" />
+                </a>
             </div>
             <div class="footer__container">
-                <a href="./nosotros.html" class="container__up">Volver arriba</a>
-                <p class="container__copy">© Copyright 2022 EL POTRERO - Todos los Derechos Reservados</p>
+                <a href="./nosotros.html" class="footer__container-up">Volver arriba ⬆</a>
+                <p class="footer__container-copy">© Copyright 2022 EL POTRERO - Todos los Derechos Reservados</p>
             </div>
         </footer>
     </body>

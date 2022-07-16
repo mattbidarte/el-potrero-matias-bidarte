@@ -1,0 +1,21 @@
+.mainNosotros_title {
+    margin-top: 100px;
+}
+
+.mainNosotros__nosotros {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    & img {
+        height: 40vh;
+        border-radius: 15px;
+        border: #593622 10px solid;
+    }
+
+    & p {
+        margin-left: 50px;
+        font-size: 2em;
+        text-align: left;  
+    }
+}
