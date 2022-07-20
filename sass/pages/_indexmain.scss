@@ -22,14 +22,14 @@
             font-size: 4em;
             font-weight: bold;
             padding: 20px;
-            text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+            text-shadow: $text-shadow;
         }
 
         & p {
             text-align: center;
             color: #fff;
             font-size: 2em;
-            text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+            text-shadow: $text-shadow;
         }
 
         & a {
@@ -43,7 +43,7 @@
             color: #000;
             background-color: #D99559;
             border-radius: 50px;
-            border: 1px solid #593622;
+            border: 1px solid $color-principal;
             transition: all 0.3s;
 
             &:hover {
@@ -78,15 +78,12 @@
     }
 
     &__card {
-        display: flex;
-        flex-direction: column;
-        background-color: #e6e6e6;
+        @include flexcenter (flex, column, space-evenly, center);
+        background-color: $color-gris;
         height: 500px;
         width: 350px;
-        align-items: center;
-        justify-content: space-evenly;
         border-radius: 20px;
-        box-shadow: 0 15px 30px -12px rgba(0,0,0,0.5);
+        box-shadow: $box-shadow;
         padding: 20px;
         margin: 25px;
         transition: all 0.3s;
@@ -115,7 +112,7 @@
 
         &-price {
             font-size: 1.8em;
-            color: #593622;
+            color: $color-principal;
         }
     }
 }
@@ -123,9 +120,7 @@
 // BUTTONS  
 .main__button {
     margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexcenter (flex, row, center, center);
 }
 
 .button__main {
@@ -134,11 +129,11 @@
     font-size: 1.5em;
     font-weight: bold;
     color: #fff;
-    background-color: #593622;
+    background-color: $color-principal;
     padding: 15px;
     margin: 0 15px;
     border-radius: 20px;
-    box-shadow: 0 15px 30px -12px rgba(0,0,0,0.5);
+    box-shadow: $box-shadow;
     transition: all 0.3s;
 
     &:hover {

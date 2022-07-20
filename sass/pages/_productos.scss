@@ -28,7 +28,7 @@
         align-items: center;
         justify-content: space-evenly;
         border-radius: 20px;
-        box-shadow: 0 15px 30px -12px rgba(0,0,0,0.5);
+        box-shadow: $box-shadow;
         padding: 20px;
         margin: 25px;
         transition: all 0.3s;
@@ -57,7 +57,7 @@
 
         &-price {
             font-size: 1.8em;
-            color: #593622;
+            color: $color-principal;
         }
     }
 }
@@ -113,7 +113,7 @@
         box-shadow: 0 15px 30px -12px rgba(0,0,0,0.5);
 
         &:hover {
-            background-color: #593622;
+            background-color: $color-principal;
             color: #fff;
         }
 
@@ -144,7 +144,7 @@
     }
 
     & h4 {
-        color: #593622;
+        color: $color-principal;
         font-size: 1.7em;
     }
     

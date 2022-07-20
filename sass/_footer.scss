@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     margin-top: 100px;
-    background-color: #593622;
+    background-color: $color-principal;
 
     &__title {
         text-align: center;
@@ -11,10 +11,7 @@
     }
 
     &__social {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flexcenter (flex, row, center, center);
 
         &-logo {
             height: 40px;
