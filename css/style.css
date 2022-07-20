@@ -125,7 +125,8 @@ ul {
   width: 100%;
   max-width: 70vw;
   margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 550px);
   row-gap: 50px;
   justify-items: center;
   align-items: center;
@@ -190,7 +191,13 @@ ul {
     color: #fff;
     background-color: #924b24; }
 
+@media screen and (max-width: 975px) {
+  /* Page Index */
+  .destacados {
+    grid-template-columns: repeat(2, 400px); } }
+
 @media screen and (max-width: 815px) {
+  /* Page index */
   .hamburger {
     display: block; }
     .hamburger.active .hamburger__bar:nth-child(2) {
@@ -215,7 +222,8 @@ ul {
     .header__content-navbar.active {
       left: 0; }
   .destacados {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px; } }
 
 @media screen and (max-width: 650px) {
   /* Page Index */
