@@ -20,6 +20,11 @@ a {
 ul {
   list-style: none; }
 
+@media screen and (max-width: 400px) {
+  /* general */
+  .max-width {
+    max-width: 70vh; } }
+
 .header {
   position: sticky;
   top: 0;
@@ -120,8 +125,7 @@ ul {
   width: 100%;
   max-width: 70vw;
   margin: 0 auto;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 550px);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 50px;
   justify-items: center;
   align-items: center;
@@ -186,13 +190,7 @@ ul {
     color: #fff;
     background-color: #924b24; }
 
-@media screen and (max-width: 975px) {
-  /* Page Index */
-  .destacados {
-    grid-template-columns: repeat(2, 400px); } }
-
 @media screen and (max-width: 815px) {
-  /* Page index */
   .hamburger {
     display: block; }
     .hamburger.active .hamburger__bar:nth-child(2) {
@@ -217,8 +215,7 @@ ul {
     .header__content-navbar.active {
       left: 0; }
   .destacados {
-    grid-template-columns: 1fr;
-    grid-row-gap: 10px; } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 650px) {
   /* Page Index */
@@ -275,55 +272,6 @@ ul {
     color: #fff;
     padding: 30px 0 5px 0;
     font-size: 1.3em; }
-
-@media screen and (max-width: 1220px) {
-  /* Page Productos */
-  .sectionGrid {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 975px) {
-  /* Page contacto */
-  .mainContacto__section2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-row-gap: 5vh; }
-  .section2__form button {
-    align-self: center; }
-  .wppbutton {
-    font-size: 0.8em; }
-  .wppbutton__wpp {
-    height: 8vh; } }
-
-@media screen and (max-width: 815px) {
-  /* Page Productos */
-  .sectionGrid__card {
-    grid-template-columns: 50px 200px;
-    width: 300px;
-    height: 100px;
-    align-items: center;
-    column-gap: 35px; }
-  .sectionGrid__card img {
-    height: 80px; }
-  .sectionGrid__card-right h3 {
-    font-size: 1.4em; } }
-
-@media screen and (max-width: 675px) {
-  /* Page Productos */
-  .sectionGrid {
-    grid-template-columns: 1fr; } }
-
-@media screen and (max-width: 650px) {
-  /* Page Contacto */
-  .section2__form {
-    display: flex;
-    flex-direction: column; }
-  .section2__form textarea {
-    height: 100%; } }
-
-@media screen and (max-width: 400px) {
-  /* general */
-  .max-width {
-    max-width: 70vh; } }
 
 .destacados {
   display: grid;
