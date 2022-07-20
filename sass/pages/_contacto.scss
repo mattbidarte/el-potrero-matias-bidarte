@@ -83,34 +83,3 @@
 .wppbutton__wpp {
     height: 80px;
 }
-
-@media screen and (max-width: 975px){
-    .mainContacto__section2{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-row-gap: 5vh;
-
-    }
-
-    .section2__form button {
-        align-self: center;
-    }
-
-    .wppbutton {
-        font-size: 0.8em;
-
-        &__wpp {
-            height: 8vh;
-        }
-    }
-}
-
-@media screen and (max-width: 500px){
-    .section2__img {
-        height: 25vh;
-    }
-
-    .section2__wppbutton {
-        font-size: 1.5em;
-    }
-}
