@@ -11,36 +11,28 @@
         width: 100%;
         max-width: 50vw;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flexcenter (flex, column, center, center);
 
         & h2 {
+            @include font (#fff, bold, 4em);
             text-align: center;
-            color: #fff;
-            font-size: 4em;
-            font-weight: bold;
             padding: 20px;
             text-shadow: $text-shadow;
         }
 
         & p {
+            @include font (#fff, none, 2em);
             text-align: center;
-            color: #fff;
-            font-size: 2em;
             text-shadow: $text-shadow;
         }
 
         & a {
+            @include font (#000, bold, 1.8em);
             text-align: center;
             display: inline-block;
             text-decoration: none;
-            font-size: 1.8em;
-            font-weight: bold;
             margin-top: 30px;
             padding: 10px 15px;
-            color: #000;
             background-color: #D99559;
             border-radius: 50px;
             border: 1px solid $color-principal;
@@ -57,33 +49,28 @@
 /* inicio productos destacados index */
 
 .destacados {
-    display: grid;
+    @include gridcenter;
     width: 100%;
     max-width: 70vw;
     margin: 0 auto;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 550px);
     row-gap: 50px;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
 
     &-title {
+        @include font (none, bold, 4.5em);
         display: block;
-        font-size: 4.5em;
         text-align: center;
         margin: 50px 10px;
-        font-weight: bold;
     }
 
     &__card {
         @include flexcenter (flex, column, space-evenly, center);
         background-color: $color-gris;
-        height: 500px;
-        width: 350px;
-        border-radius: 20px;
-        box-shadow: $box-shadow;
+        height: map-get($estilocard, altura);
+        width: map-get($estilocard, ancho );
+        border-radius: map-get($estilocard, borde);
+        box-shadow: map-get($estilocard, sombra);
         padding: 20px;
         margin: 25px;
         transition: all 0.3s;

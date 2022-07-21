@@ -25,9 +25,7 @@
 }
 
 .section2__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexcenter (flex, column, center, none);
 
     & input, textarea, select {
         width: 100%;
@@ -61,15 +59,10 @@
 }
 
 .section2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexcenter (flex, column, none, center);
 
     &__wppbutton {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include flexcenter (flex, row, center, center);
         margin-top: 30px;
         font-size: 2em;
         color: #000;

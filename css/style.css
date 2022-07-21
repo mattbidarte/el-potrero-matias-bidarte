@@ -34,12 +34,13 @@ ul {
   padding: 30px 20px; }
   .header__content {
     display: flex;
+    flex-direction: none;
     justify-content: space-between;
     align-items: center; }
     .header__content-logo {
       color: #fff;
-      font-size: 3em;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 3em; }
       .header__content-logo-menu {
         height: 30px;
         display: none;
@@ -49,9 +50,9 @@ ul {
       align-items: center; }
       .header__content-navbar-item {
         color: #fff;
+        font-weight: bold;
         font-size: 1.7em;
         margin: 0 15px;
-        font-weight: bold;
         transition: all 0.3s; }
         .header__content-navbar-item:hover {
           color: #bdbdbd; }
@@ -88,29 +89,30 @@ ul {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .main__banner-portada h2 {
-      text-align: center;
       color: #fff;
-      font-size: 4em;
       font-weight: bold;
+      font-size: 4em;
+      text-align: center;
       padding: 20px;
       text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); }
     .main__banner-portada p {
-      text-align: center;
       color: #fff;
+      font-weight: none;
       font-size: 2em;
+      text-align: center;
       text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); }
     .main__banner-portada a {
+      color: #000;
+      font-weight: bold;
+      font-size: 1.8em;
       text-align: center;
       display: inline-block;
       text-decoration: none;
-      font-size: 1.8em;
-      font-weight: bold;
       margin-top: 30px;
       padding: 10px 15px;
-      color: #000;
       background-color: #D99559;
       border-radius: 50px;
       border: 1px solid #593622;
@@ -122,22 +124,23 @@ ul {
 /* inicio productos destacados index */
 .destacados {
   display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
   width: 100%;
   max-width: 70vw;
   margin: 0 auto;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 550px);
-  row-gap: 50px;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center; }
+  row-gap: 50px; }
   .destacados-title {
-    display: block;
+    color: none;
+    font-weight: bold;
     font-size: 4.5em;
+    display: block;
     text-align: center;
-    margin: 50px 10px;
-    font-weight: bold; }
+    margin: 50px 10px; }
   .destacados__card {
     display: flex;
     flex-direction: column;
@@ -229,57 +232,9 @@ ul {
       background-color: #bdbdbd; }
   .footer__container-copy {
     color: #fff;
-    padding: 30px 0 5px 0;
-    font-size: 1.3em; }
-
-.destacados {
-  display: grid;
-  width: 100%;
-  max-width: 70vw;
-  margin: 0 auto;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 550px);
-  row-gap: 50px;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center; }
-  .destacados-title {
-    display: block;
-    font-size: 4.5em;
-    text-align: center;
-    margin: 50px 10px;
-    font-weight: bold; }
-  .destacados__card {
-    display: flex;
-    flex-direction: column;
-    background-color: #e6e6e6;
-    height: 500px;
-    width: 350px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 25px;
-    transition: all 0.3s; }
-    .destacados__card:hover {
-      transform: translateY(-10px); }
-    .destacados__card-img {
-      height: 300px;
-      margin-bottom: 20px;
-      border-radius: 10px; }
-    .destacados__card-title {
-      font-size: 2em;
-      text-align: center;
-      font-weight: bold; }
-    .destacados__card-description {
-      font-size: 1.5em;
-      text-align: center;
-      padding: 10px; }
-    .destacados__card-price {
-      font-size: 1.8em;
-      color: #593622; }
+    font-weight: none;
+    font-size: 1.3em;
+    padding: 30px 0 5px 0; }
 
 .contacto-button {
   text-align: center;
@@ -305,12 +260,12 @@ ul {
 
 .sectionGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 50px auto;
   justify-content: center;
   align-items: center;
   align-content: center;
-  justify-items: center; }
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px auto; }
   .sectionGrid__card {
     margin: 30px;
     width: 360px;
@@ -334,7 +289,8 @@ ul {
 .sectionGrid__card-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: none; }
   .sectionGrid__card-right h3 {
     text-align: left;
     font-size: 1.6em;
@@ -349,14 +305,14 @@ ul {
   margin: 80px 0; }
 
 .mainNosotros__nosotros {
-  max-width: 60vw;
   display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  max-width: 60vw;
   grid-template-columns: 200px 600px;
   column-gap: 150px;
-  align-content: center;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
   margin: 0 auto; }
   .mainNosotros__nosotros-img, .section2__img {
     height: 40vh;
@@ -385,7 +341,8 @@ ul {
 .section2__form {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: none; }
   .section2__form input, .section2__form textarea, .section2__form select {
     width: 100%;
     padding: 10px 10px;
@@ -412,12 +369,13 @@ ul {
 .section2 {
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center; }
   .section2__wppbutton {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
     font-size: 2em;
     color: #000; }

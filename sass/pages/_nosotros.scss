@@ -3,14 +3,10 @@
 }
 
 .mainNosotros__nosotros {
+    @include gridcenter;
     max-width: 60vw;
-    display: grid;
     grid-template-columns: 200px 600px;
     column-gap: 150px;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
     margin: 0 auto;
 
     &-img {
