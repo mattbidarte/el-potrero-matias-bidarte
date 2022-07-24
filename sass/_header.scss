@@ -12,6 +12,10 @@
         &-logo {
             @include font (#fff, bold, 3em);
 
+            &:hover {
+                color: #bdbdbd;
+            }
+
             &-menu {
                 height: 30px;
                 display: none;
