@@ -13,7 +13,7 @@
             @include font (#fff, bold, 3em);
 
             &:hover {
-                color: #bdbdbd;
+                color: $gris-tenue;
             }
 
             &-menu {
@@ -33,7 +33,7 @@
                 transition: all 0.3s;
 
                 &:hover {
-                    color: #bdbdbd;
+                    color: $gris-tenue;
                 }
 
                 &:active {
