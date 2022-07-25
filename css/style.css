@@ -113,10 +113,27 @@ ul {
       background-color: #D99559;
       border-radius: 50px;
       border: 1px solid #593622;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      animation: shake 2s linear infinite;
+      transform-origin: 50% 50%; }
       .main__banner-portada a:hover {
         color: #fff;
         background-color: #924b24; }
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0); }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0); } }
 
 .destacados {
   display: grid;
@@ -357,7 +374,8 @@ ul {
     font-size: 1.7em; }
   .section2__form textarea {
     max-height: 130px;
-    min-height: 130px; }
+    min-height: 130px;
+    font-size: 2.2em; }
   .section2__form button {
     padding: 15px;
     font-size: 1.7em;
