@@ -1,10 +1,10 @@
-@import 'variables';
-@import 'global';
-@import 'header';
+@import './components/variables';
+@import './components/global';
+@import './components/header';
+@import './components/footer';
 @import './pages/indexmain';
-@import 'footer';
 @import './pages/productos';
 @import './pages/nosotros';
 @import './pages/contacto';
-@import 'mediaquerie';
+@import './components/mediaquerie';
 

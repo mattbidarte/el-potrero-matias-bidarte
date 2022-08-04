@@ -42,7 +42,8 @@
             
             &:hover {
                 color: #fff;
-                background-color: #924b24;
+                background-color: $color-principal;
+                background-blend-mode: darken;
             }
         }
     }
@@ -144,7 +145,6 @@
     transition: all 0.3s;
 
     &:hover {
-        color: #fff;
         background-color: #924b24;
     }
 }

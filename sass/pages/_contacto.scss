@@ -28,12 +28,18 @@
     @include flexcenter (flex, column, center, none);
 
     & input, textarea, select {
+        color: #000;
         width: 100%;
         padding: 10px 10px;
         margin-bottom: 15px;
         font-size: 1.7em;
-        border: 1px solid $color-principal;
+        border: 0px;
+        background-color: $color-gris;
         border-radius: 5px;
+
+        &:focus {
+            border: 1px solid #000;
+        }
     }
 
     & label {

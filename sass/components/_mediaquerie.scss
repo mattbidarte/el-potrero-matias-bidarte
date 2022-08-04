@@ -123,20 +123,28 @@
     .destacados__card {
         width: 250px;
         height: 400px;
+
+        &-img{
+            height: 200px;
+        }
     }
-    .destacados__card-img {
-        height: 200px;
-    }
+    
     .main__button {
         display: flex;
         flex-direction: column;
         margin: 50px 0;
     }
+
     .button__main {
         margin: 10px 0px;
     }
+
     .banner__portada {
         max-width: 80vw;
+    }
+
+    .main__banner-portada {
+        max-width: 88vw;
     }
 
     // PAGE PRODUCTOS

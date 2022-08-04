@@ -60,12 +60,12 @@
                 
                 <!-- FORMULARIO -->
                 <form class="section2__form" netlify>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
-                    <input type="number" id="numero" name="numero" placeholder="Numero...">       
-                    <input type="email" name="correo" id="correo" placeholder="Correo...">
-                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta..."></textarea>
-                    <select name="donde" id="donde">
-                        <option value="Elegir">Eligir Localidad</option>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="number" id="numero" name="numero" placeholder="Numero" required>       
+                    <input type="email" name="correo" id="correo" placeholder="Correo" required>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta"></textarea>
+                    <select name="donde" id="donde" required>
+                        <option hidden selected >Eligir Localidad</option>
                         <option value="Montevideo">Montevideo</option>
                         <option value="Interior">Interior</option>
                     </select>
