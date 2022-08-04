@@ -35,7 +35,8 @@ $estilocard: (
     sombra: $box-shadow
 );
 
-// KEYFRAMES    
+// KEYFRAMES  
+// Animación WppFloat  
 @keyframes aparece {
     0% {
         bottom: -100;
@@ -46,7 +47,7 @@ $estilocard: (
         opacity: 100%;
     }
 }
-
+// Animación arrowup
 @keyframes aparece1 {
     0% {
         right: -100;
@@ -57,7 +58,7 @@ $estilocard: (
         opacity: 100%;
     }
 }
-
+// Animación para botón hero
 @keyframes shake {
     10%,
     90% {

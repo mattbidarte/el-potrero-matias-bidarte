@@ -19,6 +19,20 @@
         grid-template-columns: repeat(2, 400px);
     }
 
+    // NOSOTROS
+    .mainNosotros__nosotros {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+
+        & img {
+            height: 35vh;
+        }
+    
+        & p {
+            text-align: center;
+        }
+    }
+    
     // Contacto
     .mainContacto__section2{
         grid-template-columns: 1fr;
@@ -93,22 +107,6 @@
     }
     .sectionGrid__card-right h3{
         font-size: 1.4em;
-    }
-}
-
-@media screen and (max-width: 768px){
-    // NOSOTROS
-    .mainNosotros__nosotros {
-        grid-template-columns: 1fr;
-        row-gap: 50px;
-
-        & img {
-            height: 35vh;
-        }
-    
-        & p {
-            text-align: center;
-        }
     }
 }
 
