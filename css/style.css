@@ -1,3 +1,32 @@
+@keyframes aparece {
+  0% {
+    bottom: -100;
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes aparece1 {
+  0% {
+    right: -100;
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0); }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -128,13 +157,15 @@ ul {
   position: fixed;
   height: 70px;
   bottom: 20px;
-  right: 15px; }
+  right: 15px;
+  animation: aparece 0.8s linear; }
 
 .arrowup img {
   position: fixed;
   height: 60px;
   bottom: 100px;
-  right: 20px; }
+  right: 20px;
+  animation: aparece1 0.8s linear; }
 
 .main__banner {
   width: 100%;
@@ -183,21 +214,6 @@ ul {
         color: #fff;
         background-color: #593622;
         background-blend-mode: darken; }
-
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0); }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0); }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0); }
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0); } }
 
 .destacados {
   display: grid;
