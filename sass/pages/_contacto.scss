@@ -35,7 +35,7 @@
         font-size: 1.7em;
         border: 0px;
         background-color: $color-gris;
-        border-radius: 5px;
+        border-radius: 8px;
 
         &:focus {
             border: 1px solid #000;
@@ -49,7 +49,6 @@
     & textarea {
         max-height: 130px;
         min-height: 130px;
-        font-size: 2.2em;
     }
 
     & button {

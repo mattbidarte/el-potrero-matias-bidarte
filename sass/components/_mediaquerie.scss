@@ -84,6 +84,7 @@
         width: 300px;
         height: 100px;
         align-items: center;
+        align-content: center;
         column-gap: 35px;
 
         & img {
@@ -114,7 +115,7 @@
 @media screen and (max-width: 675px){
     // PRODUCTOS
     .sectionGrid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -149,8 +150,13 @@
 
     // PAGE PRODUCTOS
     .arrowup img{
-        margin: 15px;
         height: 50px;
+        bottom: 90px;
+    }
+
+    // Whatsapp float
+    .whatsapp img {
+        height: 60px;
     }
 }
 
