@@ -1,11 +1,14 @@
 .header {
+    display: flex;
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1;
+    height: 80px;
+    z-index: 5;
     background-color: $color-principal;
     color: #fff;
     padding: 30px 20px;
+    
 
     &__content {
         @include flexcenter (flex, none, space-between, center);
