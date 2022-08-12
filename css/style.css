@@ -1,8 +1,9 @@
 @keyframes aparece {
   0% {
-    bottom: -100;
+    bottom: -100px;
     opacity: 0%; }
   100% {
+    bottom: 20px;
     opacity: 100%; } }
 
 @keyframes aparece1 {
